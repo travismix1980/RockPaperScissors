@@ -65,3 +65,28 @@ elif computer_choice == "p":
 elif computer_choice == "s":
     print("Computer chose scissors!")
     print(scissors)
+
+# Game Logic to determine winner
+if player_choice == computer_choice:
+    print("We have a tie")
+
+# player chose rock
+elif player_choice == "r":
+    if computer_choice == "p":
+        print("Computer wins!!!")
+    elif computer_choice == "s":
+        print("Player wins!!!")
+
+# player chose paper
+elif player_choice == "p":
+    if computer_choice == "r":
+        print("Player wins!!!")
+    elif computer_choice == "s":
+        print("Computer won!!!")
+
+# player chose scissors
+elif player_choice == "s":
+    if computer_choice == "r":
+        print("Computer won!!!")
+    elif computer_choice == "p":
+        print("Player won!!!")
